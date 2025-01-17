@@ -29,6 +29,13 @@ With your environment set up and the issue assigned, you can start working on yo
 ### Testing
 **This is a crucial step.** Any changes that implement a new feature or modify existing features should include tests. **Unverified code will not be merged.** These tests should call `sgpt` with defined arguments, capture the output, and verify that the feature works as expected. Refer to the `tests` folder for examples.
 
+### Static Code Analysis
+Before submitting your code for review, run the static analysis script to ensure code quality and consistency. Execute the script using:
+```shell
+bash scripts/run_static_analysis.sh
+```
+This will generate a report in `static_analysis_report.md`. Address any issues identified by `pylint` and `flake8` to maintain code quality.
+
 ### Pull Request
 Before creating a pull request, run `scripts/lint.sh` and `scripts/tests.sh` to ensure all linters and tests pass. In your pull request, provide a high-level description of your changes and detailed instructions for testing them, including any necessary commands.
 
