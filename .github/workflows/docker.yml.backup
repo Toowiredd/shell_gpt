@@ -1,13 +1,9 @@
-# DISABLED AUTO-RUN: Originally triggered on auto-triggers
-# Converted to manual execution only - 2025-10-18
-# Backup available at: docker.yml.backup
 name: Docker Image CI
 
 on:
-  workflow_dispatch:  # Manual trigger only
-#   push:
-#     tags:
-#       - '*'  
+  push:
+    tags:
+      - '*'  
 
 jobs:
   build:

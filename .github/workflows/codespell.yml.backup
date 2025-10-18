@@ -1,15 +1,11 @@
-# DISABLED AUTO-RUN: Originally triggered on auto-triggers
-# Converted to manual execution only - 2025-10-18
-# Backup available at: codespell.yml.backup
 ---
 name: Codespell
 
 on:
-  workflow_dispatch:  # Manual trigger only
-#   push:
-#     branches: [main]
-#   pull_request:
-#     branches: [main]
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 permissions:
   contents: read
